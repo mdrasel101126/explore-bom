@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage Level 1</title>
+    <style>
+        button{
+            background-color:rgb(12, 127, 242);
+            color: whitesmoke;
+            border: 0;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+        input{
+            width: 40%;
+            padding: 5px 10px;
+            margin: 10px 0;
+            border: 2px solid gray;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="clearLocalStorage()">Clear LS</button><br>
+    <input type="text" name="" id="input-name">
+    <button onclick="addNameToLocalStorage()">Add Name</button>
+    <button onclick="removeNameFromLS()">Remove</button><br>
+    <input type="text" name="" id="input-age">
+    <button onclick="addAgeToLocalStorage()">Add Name</button>
+    <button onclick="removeAgeFromLS()">Remove</button><br>
+    <input type="text" name="" id="input-first-name">
+    <input type="text" name="" id="input-last-name">
+    <button onclick="addFullNameToLocalStorage()">Add Full Name</button>
+    <button onclick="removeFullNameFromLS()">Remove</button><br>
+
+    <p id="cart-data"></p>
+
+
+    <script src="js/localStorage1.js"></script>
+</body>
+</html>
