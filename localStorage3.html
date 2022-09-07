@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage Level 3 and 4</title>
+    <style>
+        section{
+            margin: 50px;
+            padding: 30px;
+            text-align: center;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.71);
+            color: whitesmoke;
+        }
+        button{
+            background-color:rgb(12, 127, 242);
+            color: whitesmoke;
+            border: 0;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+        input{
+            width: 40%;
+            padding: 5px 10px;
+            margin: 10px 0;
+            border: 2px solid gray;
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <section>
+        <h3>Please Contact Me</h3>
+        <p><input type="text" name="" id="input-name" placeholder="Enter Name"> <button id="btn-delete-name">Delete Name</button> <button id="btn-send-name">Send Name</button></p>
+        <p><input type="email" name="" id="input-email" placeholder="Enter Email"> <button id="btn-delete-email">Delete Email</button> <button id="btn-send-email">Send Email</button></p>
+        <p><textarea name="" id="input-message" placeholder="Enter Message" cols="30" rows="3"></textarea> <button id="btn-delete-message">Delete Message</button> <button id="btn-send-message">Send Message</button></p>
+        <button id="btn-send">Send</button>
+        <button id="btn-reset">Reset</button>
+    </section>
+    <section>
+        <div id="display-person">
+        </div>
+    </section>
+
+    <script src="js/localStorage3.js"></script>
+</body>
+</html>
