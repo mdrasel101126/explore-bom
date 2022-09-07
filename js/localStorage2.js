@@ -9,7 +9,11 @@ const increaseCount = () => {
 };
 
 const getLocalStorage = () => {
-  const count = localStorage.getItem("count");
+  let count = localStorage.getItem("count");
+  console.log(count);
+  if (count === null) {
+    count = 0;
+  }
   console.log(typeof count);
   const countString = document.getElementById("count");
   countString.innerText = count;
